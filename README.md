@@ -1,2 +1,3 @@
-# cse227-wi24
-CSE 227 – Graduate Computer Security
+# CSE291 -- Sociotechnical Cybersecurity
+
+Welcome to CSE 291! This is a GitHub repository with an up-to-date syllabus for the course. 

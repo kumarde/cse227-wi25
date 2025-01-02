@@ -10,196 +10,173 @@
     <link rel="stylesheet" href="css/local.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700" rel="stylesheet">
 
-    <title>CSE291D: Sociotechnical Cybersecurity</title>
+    <title>CSE227: Graduate Computer Security</title>
   </head>
   <body>
     <div class="container">
       <div class="row justify-content-md-center">
         <div class="col col-lg-10">
-          <h1>Sociotechnical Cybersecurity</h1>
-          <h3>UCSD CSE 291D, Fall 2024</h3>
+          <h1>Graduate Computer Security</h1>
+          <h3>UCSD CSE 227, Winter 2025</h3>
 
-          <p> This course focuses on the cybersecurity threats that emerge when humans interact with technology at scale – such as misinformation, disinformation, and online harassment. We will study how these threats emerge in practice and explore the landscape of technical defenses and interventions against these harms. Students will primarily read, synthesize, present, and discuss research papers. The course will culminate in a presentation of a quarter-long research project that students will conduct in small groups. </p>
+          <p> This graduate-level course focuses on computer security: the study of computer systems in the presence of an adversary. The course is a breadth course designed to give students exposure to many aspects of computer security, with topics including systems security, web security, edge security, and user privacy. The course will introduce students to modern research challenges in the area and the standards for how we design safer and more secure computer systems. Students will primarily read, synthesize, present, and discuss research papers. The course will culminate in a presentation of a quarter-long research project that students will conduct in small groups. </p>
 
           <h2>Course Information</h2>
 
 		  <p><b>Lecture:</b> Tu/Th 12:30&ndash;1:50 PM.
-		  <a href="https://maps.app.goo.gl/CvfcJJ6tqYQ575pQA">Warren Lecture Hall 2207</a>.
+		  <a href="https://maps.app.goo.gl/CvfcJJ6tqYQ575pQA">Ridge Walk Academic Complex 0121</a>.
           
           <p><b>Instructor:</b> <a href="https://kumarde.com">Deepak Kumar</a><br/>
              Office Hours: Tuesday 2:00&ndash;3:00 PM, or by appointment, CSE 3248.</p>
           
-          <p><b>Teaching Assistant:</b> Muchan Li<br/>
+          <p><b>Teaching Assistant:</b> Tianyi Shan<br/>
              Office Hours: By appointment.</p>
           
-	      <p><b>Prerequisites:</b> Some cybersecurity knowledge and human-computer interaction knowledge is helpful, but not required. This is a research focused course, so students who are excited to explore novel topics are encouraged to enroll.</p>
+	      <p><b>Prerequisites:</b> Some systems and cybersecurity knowledge is helpful, but not required. This is a research focused course, so students who are excited to explore novel topics are encouraged to enroll.</p>
 
-          <p><b>Communication:</b> We use <a href="https://canvas.ucsd.edu/courses/58787">Canvas</a> for announcements; discussion happens on <a href="https://piazza.com/ucsd/fall2024/cse291_fa24_d00/home">Piazza.</a> <a href="https://docs.google.com/document/d/1Fk-cdqF1cGAilY5fGkGO0CfwDKOxPX44snAgaFPr4w8/edit#heading=h.kfjouqi0r6m0" target="_blank">You can find the syllabus here.</a></p> 
-          <p><b>Submissions:</b> All course assignments will be submitted through Gradescope. Entry Code: <b>NY4WBJ</b>.
+          <p><b>Communication:</b> We use <a href="https://canvas.ucsd.edu/courses/61827">Canvas</a> for announcements; discussion happens on <a href="https://piazza.com/ucsd/winter2025/cse227/home">Piazza.</a> <a href="https://docs.google.com/document/d/1gFhgqCezSXiHfKvNjchw2SGGXgZ31gWZbOraS4Lpr1g/edit?tab=t.0" target="_blank">You can find the syllabus here.</a></p> 
+          <p><b>Submissions:</b> All course assignments will be submitted through Gradescope. Entry Code: <b>WWEYY2</b>.
           <h2>Schedule</h2>
           <p>The tentative schedule and readings for the class are below:</p>
           <div class="papers">
             <div class="row">
               <div class="col col-lg-6">
+				<h4>1/7&nbsp;&nbsp;Introduction and Administrivia</h4>
+                <p> Course introduction, definitions, reflections on trusting trust.</p>
               </div>
               <div class="col col-lg-6">
-				<h4>9/26&nbsp;&nbsp;What is Sociotechnical Cybersecurity?</h4>
-                <p> [DK] Course introduction, definitions, harms, and a brief history. <a href="lectures/lecture_1.pdf" target="_blank">[slides]</a></p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col col-lg-6">
-                <h4>10/1&nbsp;&nbsp;Current Threat Landscape</h4>
-                <p>[DK] The harm landscape, the structure of Trust & Safety inside companies. <a href="lectures/lecture_2.pdf" target="_blank">[slides]</a></p>
-              </div>
-              <div class="col col-lg-6">
-                  <h4>10/3&nbsp;&nbsp;Measuring Trust & Safety </h4>
-				<p>[DK] How do we measure online safety in research and in practice? What metrics do we use to communicate success? How do we do research in this space?<a href="lectures/lecture_3.pdf" target="_blank"> [slides]</a></p>
+                <h4>1/9&nbsp;&nbsp;Threat Models & the Science of Security</h4>
+                <p>How do we do computer security research? What are our goals? How do we measure those goals?</p>
               </div>
             </div>
             <div class="row">
               <div class="col col-lg-6">
-                <h4>10/8&nbsp;&nbsp;Content Moderation 1</h4>
+                <h4>1/14&nbsp;&nbsp;Software Security</h4>
+                <p> Smashing The Stack For Fun And Profit <a href="https://inst.eecs.berkeley.edu/~cs161/fa08/papers/stack_smashing.pdf" target="_blank"> [link] </a></p>
+                <p> The geometry of innocent flesh on the bone: Return-into-libc without function calls (on the x86)” <a href="https://dl.acm.org/doi/pdf/10.1145/1315245.1315313?casa_token=u1PFewYuWtkAAAAA:eGwiUBlwLmaK5hWrvr9IHLoSQk_lBdKG7BqecTgYAds4Rx0T6JDdU9oZs1wV6qEXeVhwsyL51KvF" target="_blank"> [link] </a></p>
+              </div>
+              <div class="col col-lg-6">
+                <h4>1/16&nbsp;&nbsp;Side Channels</h4>
+                <p> Lest We Remember: Cold-Boot Attacks on Encryption Keys <a href="https://dl.acm.org/doi/pdf/10.1145/1506409.1506429" target="_blank"> [link] </a></p>
+                <p> Keyboard Acoustic Emanations Revisited  <a href="https://dl.acm.org/doi/pdf/10.1145/1609956.1609959?casa_token=mP-7txRzq7UAAAAA:FwRS3LQ1ZBpjjGuNFV5e21IGYF19-AUOMuEC-VvgcNJWFQsf1wtniVtErjlH6WdatAr0-rFgQNRV" target="_blank"> [link] </a></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-lg-6">
+                <h4>1/21&nbsp;&nbsp;Cyberphysical Systems</h4>
                 <!--<p><b> Readings for today: </b><p>-->
-                <p> Commericial Content Moderation, by Sarah Roberts. From her book, "Behind the Screen: Content Moderation in the Shadows of Social Media" <a href="https://drive.google.com/file/d/1FSr0KgVq5-jcgVtICDI0rxiZpJ2Jgg2V/view?usp=drive_link" target="_blank"> [link] </a></p>
-                <p> Metaphors in Moderation, by Joseph Seering, Geoff Kaufman, and Stevie Chancellor. In New Media & Society, 2020. <a href="https://drive.google.com/file/d/1MMghcYiBkJ_iDJPR6dLR2k87KmWByJ2P/view?usp=drive_link" target="_blank"> [link] </a></p>
+                <p> Pacemakers and Implantable Cardiac Defibrillators:
+Software Radio Attacks and Zero-Power Defenses <a href="https://www.secure-medicine.org/hubfs/public/publications/icd-study.pdf" target="_blank"> [link] </a></p>
+                <p> Experimental Security Analysis of a Modern Automobile <a href="https://www.autosec.org/pubs/cars-oakland2010.pdf" target="_blank"> [link] </a></p>
               </div>
              <div class="col col-lg-6">
-                <h4>10/10&nbsp;&nbsp;Content Moderation 2</h4>
+                <h4>1/23&nbsp;&nbsp;IoT Devices</h4>
                 <!--<p><b> Readings for today: </b><p>-->
-                <p> Human-AI Collaboration via Conditional Delegation: A Case Study of Content Moderation, by Vivian Lai et al. CHI 2022.<a href="https://drive.google.com/file/d/1BVSHzegreOvhHk24mYDy4DX5Idc-L421/view?usp=drive_link" target="_blank"> [link] </a></p>
-                <p> Comparing the Perceived Legitimacy of Content Moderation Processes: Contractors, Algorithms, Expert Panels, and Digital Juries, by Christina Pan et al. CSCW 2022.<a href="https://hci.stanford.edu/publications/2022/ComparingPerceivedLegitimacy.pdf" target="_blank"> [link] </a></p>
+                <p> Skill Squatting Attacks on Amazon Echo <a href="https://kumarde.com/papers/echosquat.pdf" target="_blank"> [link] </a></p>
+                <p> Light Commands: Laser-Based Audio Injection Attacks on Voice-Controllable Systems <a href="https://www.usenix.org/system/files/sec20-sugawara.pdf" target="_blank"> [link] </a></p>
               </div>
             </div>
             <div class="row">
               <div class="col col-lg-6">
-                <h4>10/15&nbsp;&nbsp;Information Manipulation 1</h4>
-                <p> <b> Primer, everyone should read. </b> Disinformation’s spread: bots, trolls and all of us, by Kate Starbird. Nature World View.<a href="https://drive.google.com/file/d/1CMje41P7inN1jgm3r82G_kPl6bRCp2ND/view?usp=drive_link" target="_blank"> [link] </a></p>
-                <p> Like-minded sources on Facebook are prevalent but not polarizing, by Brendan Nyhan et al. Nature 2023.<a href="https://www.nature.com/articles/s41586-023-06297-w" target="_blank"> [link] </a></p>
-                <p> On the infrastructure providers that support misinformation websites, by Catherine Han et al. AAAI ICWSM 2022.<a href="https://kumarde.com/papers/misinfo-infra.pdf" target="_blank"> [link] </a></p>
+                <h4>1/28&nbsp;&nbsp;Fixing a Broken Web</h4>
+                <p> Robust Defenses for Cross-Site Request Forgery <a href="https://seclab.stanford.edu/websec/csrf/csrf.pdf" target="_blank"> [link] </a></p>
+                <p> Parse Me, Baby, One More Time: Bypassing HTML Sanitizer via Parsing Differentials.<a href="https://www.ias.cs.tu-bs.de/publications/parsing_differentials.pdf" target="_blank"> [link] </a></p>
               </div>
               <div class="col col-lg-6">
-                <h4>10/17&nbsp;&nbsp;Information Manipulation 2</h4>
-                <p> Specious Sites: Tracking the Spread and Sway of Spurious News Stories at Scale, by Hans Hanley et al. IEEE Security & Privacy 2024.<a href="https://kumarde.com/papers/specious.pdf" target="_blank"> [link] </a></p>
-                <p> Tactics, Threats, and Targets: Modeling Disinformation and its Mitigation, by Shujaat Mirza et al. ISOC Network and Distributed Systems Security Symposium 2023.<a href="https://www.ndss-symposium.org/wp-content/uploads/2023/02/ndss2023_s657_paper.pdf" target="_blank"> [link] </a></p>
+                <h4>1/30&nbsp;&nbsp;Web Tracking</h4>
+                <p> Internet Jones and the Raiders of the Lost Trackers: An Archaeological Study of Web Tracking from 1996 to 2016<a href="https://www.usenix.org/system/files/sec16_paper_lerner_1.pdf" target="_blank"> [link] </a></p>
+                <p> The Web Never Forgets: Persistent Tracking Mechanisms in the Wild <a href="https://dl.acm.org/doi/pdf/10.1145/2660267.2660347" target="_blank"> [link] </a></p>
               </div>
             </div>
             <div class="row">
               <div class="col col-lg-6">
-                <h4>10/22&nbsp;&nbsp;Online Harassment and Abuse 1</h4>
-                <p> SoK: Hate, Harassment, and the Changing Landscape of Online Abuse, by Kurt Thomas et al. IEEE Security & Privacy 2021.<a href="https://drive.google.com/file/d/1XaWFcA2JdwOrgCP4Z0w1JuapFZappxUh/view?usp=drive_link" target="_blank"> [link] </a></p>
-                <p> Designing Toxic Content Classification for a Diversity of Perspectives, by Deepak Kumar et al. USENIX Symposium on Usable Privacy and Security.<a href="https://www.usenix.org/system/files/soups2021-kumar.pdf" target="_blank"> [link] </a></p>
+                <h4>2/4&nbsp;&nbsp;TLS I</h4>
+                <p> Mining Your Ps and Qs: Detection of Widespread Weak Keys in Network Devices. <a href="https://www.usenix.org/system/files/conference/usenixsecurity12/sec12-final228.pdf" target="_blank"> [link] </a></p>
+                <p> The Security Impact of HTTPS Interception <a href="https://git.safemobile.org/crimeflare/cloudflare-tor/raw/commit/020252c3748c37c4b0f2da47f46b3505f82435fa/pdf/2017-The_Security_Impact_of_HTTPS_Interception.pdf" target="_blank"> [link] </a></p>
              </div>
               <div class="col col-lg-6">
-		        <h4>10/24&nbsp;&nbsp;Online Harassment and Abuse 2</h4>
-                <p> "You Know What to Do”: Proactive Detection of YouTube
-Videos Targeted by Coordinated Hate Attacks, by Nerico Mariconti et al. ACM CSCW 2019.<a href="https://drive.google.com/file/d/1l2sWZa5i92duMto40OMHhSWoTPakRrFd/view?usp=drive_link" target="_blank"> [link] </a></p>
-                <p> Jury Learning: Integrating Dissenting Voices into Machine Learning Models, by Mitchell Gordon et al. ACM CHI 2022.<a href="https://dl.acm.org/doi/pdf/10.1145/3491102.3502004" target="_blank"> [link] </a></p>
+		        <h4>2/6&nbsp;&nbsp;TLS II</h4>
+                <p> The Most Dangerous Code in the World: Validating SSL Certificates in Non-Browser Software <a href="https://www.cs.utexas.edu/~shmat/shmat_ccs12.pdf" target="_blank"> [link] </a></p>
+                <p> Tracking Certificate Misissuance in the Wild <a href="https://zakird.com/papers/zlint.pdf" target="_blank"> [link] </a></p>
               </div>
             </div>
             <div class="row">
               <div class="col col-lg-6">
-                <h4>10/29&nbsp;&nbsp;Youth Safety 1</h4>
-                <p> Understanding the Digital Lives of Youth: Analyzing Media Shared within Safe Versus Unsafe Private Conversations on Instagram, by Shiza Ali et al. ACM CHI 2022.<a href="https://drive.google.com/file/d/1hp19cjJb-jNbigUi5noYsm3rZX27uBCm/view?usp=drive_link" target="_blank"> [link] </a></p>
-                <p> Mental Models, Expectations and Implications of Client-Side Scanning: An Interview Study with Experts, by Divyanshu Bhardwaj et al. ACM CHI 2024.<a href="https://drive.google.com/file/d/1mplP86j9VbbriT892ZLG-IPQGnbLfoQy/view?usp=drive_link" target="_blank"> [link] </a></p>
+                <h4>2/11&nbsp;&nbsp;DDoS & Botnets</h4>
+                <p> Inferring Internet Denial-of-Service Activity <a href="https://www.usenix.org/legacy/events/sec01/moore/moore.pdf" target="_blank"> [link] </a></p>
+                <p>Understanding the Mirai Botnet<a href="https://www.usenix.org/system/files/conference/usenixsecurity17/sec17-antonakakis.pdf" target="_blank"> [link] </a></p>
               </div>
               <div class="col col-lg-6">
-                <h4>10/31&nbsp;&nbsp;Youth Safety 2</h4>
-                <p> Profiling the Offline and Online Risk Experiences of Youth to Develop Targeted Interventions for Online Safety, by Ashwaq Alsoubai, et al. ACM CSCW 2024.<a href="https://drive.google.com/file/d/1b554ybyQ9Hb_xDhMZpm8na_m7KIONlgy/view?usp=drive_link" target="_blank"> [link] </a></p>
-                <p> Experimental Analyses of the Physical Surveillance Risks in Client-Side Content Scanning, et al. ISOC NDSS 2024.<a href="https://www.earlence.com/assets/papers/phash-ndss24.pdf" target="_blank"> [link] </a></p>
+                <h4>2/13&nbsp;&nbsp;DNS</h4>
+                <p> How DNS Works <a href="https://www.cloudflare.com/learning/dns/what-is-dns/" target="_blank"> [link] </a></p>
+                <p> An Illustrated Guide to the Kaminsky DNS Vulnerability <a href="http://unixwiz.net/techtips/iguide-kaminsky-dns-vuln.html" target="_blank"> [link] </a></p>
               </div>
             </div>
            <div class="row">
               <div class="col col-lg-6">
-                  <h4>11/5&nbsp;&nbsp;Intimate Partner Surveillance / Spyware 1</h4>
-                <p> The spyware used in intimate partner violence, by Rahul Chatterjee et al. IEEE Security & Privacy 2019.<a href="https://drive.google.com/file/d/1IADeGsUq95B6OlWvIHQiZQDWSyHBBpTZ/view?usp=drive_link" target="_blank"> [link] </a></p>
-                <p> Clinical Computer Security for Victims of Intimate Partner Violence, by Sam Havron et al. USENIX Security 2019.<a href="https://www.usenix.org/system/files/sec19-havron.pdf" target="_blank"> [link] </a></p>
+                  <h4>2/18&nbsp;&nbsp;Network Censorship</h4>
+                <p> Censored Planet: An Internet-wide, Longitudinal Censorship Observatory 
+<a href="https://dl.acm.org/doi/pdf/10.1145/3372297.3417883" target="_blank"> [link] </a></p>
+                <p> Throttling Twitter: An Emerging Censorship Technique in Russia <a href="https://dl.acm.org/doi/pdf/10.1145/3487552.3487858" target="_blank"> [link] </a></p>
               </div>
-		<div class="col col-lg-6">
-                <h4>11/7&nbsp;&nbsp;Intimate Partner Surveillance / Spyware 2</h4>
-                <p> The Tools and Tactics Used in Intimate Partner
-Surveillance: An Analysis of Online Infidelity Forums, by Emily Tseng et al. USENIX Security 2020.<a href="https://www.usenix.org/system/files/sec20-tseng.pdf" target="_blank"> [link] </a></p>
-                <p> The Digital-Safety Risks of Financial Technologies for Survivors of Intimate Partner Violence, by Rosanna Bellini et al. USENIX Security 2023.<a href="https://www.usenix.org/system/files/usenixsecurity23-bellini.pdf" target="_blank"> [link] </a></p>
+              <div class="col col-lg-6">
+                <h4>2/20&nbsp;&nbsp;No class</h4>
+                <p><b> Class is cancelled today. Meet with your project partners!</b></p>
+              </div>
+           </div>
+            <div class="row">
+              <div class="col col-lg-6">
+                <h4>2/27&nbsp;&nbsp;Spam and e-Crime</h4>
+                <p> Click trajectories: End-to-end analysis of the spam value chain <a href="https://cseweb.ucsd.edu/~savage/papers/Oakland11.pdf" target="_blank"> [link] </a></p>
+                <p> Re: CAPTCHAs – Understanding CAPTCHA-Solving Services in an Economic Context <a href="https://cseweb.ucsd.edu/~savage/papers/UsenixSec10.pdf" target="_blank"> [link] </a></p>
+              </div>
+              <div class="col col-lg-6">
+                <h4>2/29&nbsp;&nbsp;Usability and Human Factors</h4>
+                <p> Why Johnny Can’t Encrypt: A Usability Evaluation of PGP 5.0<a href="https://people.eecs.berkeley.edu/~tygar/papers/Why_Johnny_Cant_Encrypt/USENIX.pdf" target="_blank"> [link] </a></p>
+                <p> Alice in Warningland: A Large-Scale Field Study of Browser Security Warning Effectiveness <a href="https://static.googleusercontent.com/media/research.google.com/en/us/pubs/archive/41323.pdf" target="_blank"> [link] </a></p>
               </div>
             </div>
             <div class="row">
               <div class="col col-lg-6">
-	            <h4>11/12&nbsp;Design and Interventions 1</h4>
-                <p> Reconsidering tweets: Intervening during tweet creation decreases offensive content, by Matt Katsaros et al. AAAI ICWSM 2022.<a href="https://drive.google.com/file/d/1M_I25zWYkQKA5tnU6THZwxoj-WUmQlkm/view?usp=drive_link" target="_blank"> [link] </a></p>
-                <p> You can't stay here: The efficacy of reddit's 2015 ban examined through hate speech, by Eshwar Chandrasekharan et al. ACM CSCW 2017.<a href="https://drive.google.com/file/d/1zHs1xOu_ErUDimJcAIVoUoVEDkGGoeSI/view?usp=drive_link" target="_blank"> [link] </a></p>
+                <h4>3/4&nbsp;&nbsp;Security & Society</h4>
+                <p> Sok: Hate, harassment, and the changing landscape of online abuse. <a href="https://kumarde.com/papers/abuse_sok.pdf" target="_blank"> [link] </a></p>
+                <p> Dark Patterns at Scale: Findings from a Crawl of 11K Shopping Websites <a href="https://dl.acm.org/doi/pdf/10.1145/3359183" target="_blank"> [link] </a></p>
               </div>
               <div class="col col-lg-6">
-                <h4>11/14&nbsp;&nbsp;Design and Interventions 2</h4>
-                <p> Automated Content Moderation Increases Adherence to
-Community Guidelines, by Manoel Horta Ribeiro et al. ACM Web Conference 2023.<a href="https://drive.google.com/file/d/1tBUAYHra-6awGnmSWlYPZ9qLzvGQEQ2z/view?usp=drive_link" target="_blank"> [link] </a></p>
-                <p> Reviewing Interventions to Address Misinformation, by Zhila Aghajari et al. ACM CSCW 2023.<a href="https://dl.acm.org/doi/pdf/10.1145/3579520" target="_blank"> [link] </a></p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col col-lg-6">
-                <h4>11/19&nbsp;&nbsp;Ethics in research & computing</h4>
-                <p> Ethical frameworks and computer security trolley problems: Foundations for conversations, by Tadayoshi Kohno et al. USENIX Security 2023.<a href="https://www.usenix.org/system/files/usenixsecurity23-kohno.pdf" target="_blank"> [link] </a></p>
-                <p> “Participant” Perceptions of Twitter Research Ethics, by Casey Fiesler et al. Social Media & Society 2018.<a href="https://drive.google.com/file/d/14QcT3ou3Ju8BUYsxCQ2KmOH9UZUlbq_t/view?usp=drive_link" target="_blank"> [link] </a></p>
-              </div>
-              <div class="col col-lg-6">
-                <h4>11/21&nbsp;&nbsp;Regulation, Policy, and Governance</h4>
-                <p> Techno-legal Solutionism, by María P. Angel et al. ACM Computer Science & Law Symposium 2024.<a href="https://drive.google.com/file/d/11TeAW10yFaYgAxiqwCLSAfU2XNtTS8i6/view?usp=drive_link" target="_blank"> [link] </a></p>
-                <p> Content Moderation on Social Media in the EU: Insights From the DSA Transparency Database, by Christina Drolsbach et al. ACM Web Conference 2024.<a href="https://dl.acm.org/doi/pdf/10.1145/3589335.3651482" target="_blank"> [link] </a></p>
+                <h4>3/6&nbsp;&nbsp;Ethics</h4>
+                <p> Ethical frameworks and computer security trolley problems: Foundations for conversations<a href="https://www.usenix.org/conference/usenixsecurity23/presentation/kohno" target="_blank"> [link] </a></p>
+                <p> The moral character of cryptographic work <a href="https://eprint.iacr.org/2015/1162.pdf" target="_blank"> [link] </a></p>
               </div>
             </div>
 			<div class="row">
               <div class="col col-lg-6">
-                <h4>11/26&nbsp;&nbsp;Special Topic Lecture TBA</h4>
-                <p>[DK] Lecture on a topic selected by the class via this form: <a href="https://forms.gle/Bjj4zthaw9Ghbhqm6" target="_blank">https://forms.gle/Bjj4zthaw9Ghbhqm6</a></p>
-              </div>
-              <div class="col col-lg-6">
-                <h4>11/28&nbsp;&nbsp;No class – Thanksgiving Break </h4>
-              </div>
-            </div>
-			<div class="row">
-              <div class="col col-lg-6">
-                <h4>12/3&nbsp;&nbsp;Research Project Presentations</h4>
+                <h4>3/11&nbsp;&nbsp;Research Project Presentations</h4>
                 <p>Presentations on the quarter-long project.</p>
-                <p> Schedule is here: <a href="https://docs.google.com/spreadsheets/d/1GrM84jblQIZ3Tkq_Mv5YXCojzLtQrGwOaS-VLV_9fJU/edit?gid=0#gid=0" target="_blank"> https://docs.google.com/spreadsheets/d/1GrM84jblQIZ3Tkq_Mv5YXCojzLtQrGwOaS-VLV_9fJU/edit?gid=0#gid=0 </a>
               </div>
               <div class="col col-lg-6">
-                <h4>12/5&nbsp;&nbsp;Research Project Presentations</h4>
+                <h4>3/13&nbsp;&nbsp;Research Project Presentations</h4>
                 <p>Presentations on the quarter-long project.</p>
-                <p> Schedule is here: <a href="https://docs.google.com/spreadsheets/d/1GrM84jblQIZ3Tkq_Mv5YXCojzLtQrGwOaS-VLV_9fJU/edit?gid=0#gid=0" target="_blank"> https://docs.google.com/spreadsheets/d/1GrM84jblQIZ3Tkq_Mv5YXCojzLtQrGwOaS-VLV_9fJU/edit?gid=0#gid=0 </a>
               </div>
             </div>
           </div>
 
           <h2>Course Structure</h2>
 
-		  <p> This is a discussion oriented research course. Students will be responsible for reading and discussing papers in class, presenting at least one paper during the quarter, and working on a quarter-long project in groups of 2-3. Grading is based on the following components:
+		  <p> This is a discussion oriented research course. Students will be responsible for reading and discussing papers in class and working on a quarter-long project in groups of 3-4. Grading is based on the following components:
           
-          <p style="padding-top: 10px"><b>Attendance and Participation (25%)</b></p>
-          <p> Attendance is mandatory in class. The expectation is that all
-          students will have done the reading in advance of class. To kick off
-          the class and get everyone on the same page, Deepak will begin each
-          paper-discussion session with cold calling students at random with
-          a pre-selected set of questions. These questions are not necessarily
-          to test comprehension, but rather, to get students thinking
-          critically about the reading material and provide the necessary
-          background to begin discussing the paper. </p>
+          <p style="padding-top: 10px"><b>Attendance (5%)</b></p>
+          <p> Attendance is mandatory in class and constitutes 5% of your grade. You can miss up to 2 classes without penalty and without needing to justify your absence to me. If you have additional conflicts, please contact me directly.</p>
 
-          <p style="padding-top: 5px"><b>Paper Presentation and Discussion Lead (25%)</b> <a href="projects/cse291-paper-presentation.pdf" target="_blank"> [Presentation Details], </a><a href="https://docs.google.com/spreadsheets/d/19HUYtTBN0Njo25Y4iTqBs8IFwpNa5Z6eZ6NCsj0zEjA/edit?gid=0#gid=0" target="_blank"> [Paper Assignments] </a></p>
-          <p> Students will be assigned a paper to lead discussion on with a
-          set of slides by week 2 of the quarter. Students will be expected to
-          share the slides with Deepak at least 3 days in advance and iterate
-          with him on developing the final slides before the presentation date.
-          More details about the structure of this assignment will follow in
-          lecture.</p>
+          <p style="padding-top: 10px"><b>Participation (20%)</b></p>
+          <p> Most class sessions will be structured as a discussion-forward lecture run by me. The primary mechanism for discussion is through cold calls, which are random calls to students to answer questions. These questions are a mix of testing comprehension of the reading material as well as getting students talking and discussing the topics in each paper. You get 3 “passes” over the quarter where you can skip the question if you have not read the paper. The expectation is that you will have read the papers in advance. If you have not read the paper in advance, you must disclose this when called on. Violations of this policy amount to an Academic Integrity violation. </p>
 
-
-          <p style="padding-top: 10px"><b>Term Project (50%)</b><a href="projects/cse291-fa24-project-spec.pdf" target="_blank"> [Project Details]</a></p>
-		  <p> Students will work on an independent research project over the term in groups of 2-3, which will culminate in a project presentation and small (~5 page) writeup. The grade is divided into several subparts:
+          <p style="padding-top: 10px"><b>Term Project (75%)</b></p>
+		  <p> Students will work on an independent research project over the term in groups of 3-4, which will culminate in a project presentation and small (~5 page) writeup. The grade is divided into several subparts:
           <ul>
-              <li><b> Project Intention Document (10%)</b> – This document will commit your group members and the general project direction you are going in.<b> Due 10/8 by 12:30pm PT.</b></li>
-              <li><b> Midpoint Check-In Document and Meeting (10%)</b> – This 2-page document describes your current status on the project and will serve as the basis for our meeting where we discuss more about the project in detail.Due 11/5 by 12:30pm PT. Meetings to be scheduled for the week of 11/5. <b> You can sign up for a slot for your group here: <a href="https://calendly.com/kumarde/cse291-group-meeting" target="_blank">https://calendly.com/kumarde/cse291-group-meeting</a></b></li>
-              <li><b> Final Presentation (15%)</b> – This 15 minute presentation will be given in the final week of the quarter.</li>
-              <li><b> Final Writeup (15%)</b> – This 5-page document describes the work completed over the quarter and the project.<b> Due 12/11 Anywhere on Earth.</b></li>
+              <li><b> Project Intention Form (10%)</b> – This form will commit your group members and the general project direction you are going in.<b> Due 1/17 by EOD. </b></li>
+              <li><b> Midpoint Check-In Document and Meeting (15%)</b> – This 2-page document describes your current status on the project and will serve as the basis for our meeting where we discuss more about the project in detail. <b>Due 2/14 by EOD.</b></li>
+              <li><b> Final Presentation (25%)</b> – This 15 minute presentation will be given in the final week of the quarter.</li>
+              <li><b> Final Writeup (25%)</b> – This 5-page document describes the work completed over the quarter and the project.</li>
           </ul>
 	      </p>
           <br/><br/>
